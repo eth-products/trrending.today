@@ -295,13 +295,20 @@ shopApp.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', fun
 "use strict";
 
 shopApp.controller("CartCtrl", ["$scope", "$rootScope", function ($scope, $rootScope) {
-  $scope.totalPrice = 111;
   $scope.list = $rootScope.cart;
+  $scope.listString = listToString();
   $rootScope.$on("update cart", function () {
     $scope.list = $rootScope.cart;
+    $scope.listString = listToString();
   });
 
-  $scope.buy = function () {};
+  function listToString() {
+    return _.map($rootScope.cart, function (cartItem) {
+      var str = "id:" + cartItem.id;
+      if (cartItem.size) str += "&size=" + cartItem.size;
+      return str;
+    }).join("|");
+  }
 }]);
 "use strict";
 
@@ -389,7 +396,7 @@ shopApp.component("cardComponent", {
         ngNotify.set('Вы успешно удалили товар из корзины', 'warning');
       } else {
         newItem.added = true;
-        newItem.size = $ctrl.currentSize;
+        if ($ctrl.data.typeId === 2 || $ctrl.data.typeId === 3 || $ctrl.data.typeId === 4 || $ctrl.data.typeId === 5) newItem.size = $ctrl.currentSize;
         newItem.unicId = _.random(0, 10000000000);
         $rootScope.cart.push(newItem);
         ngNotify.set('Товар успешно добавлен в корзину', 'success');
@@ -397,6 +404,15 @@ shopApp.component("cardComponent", {
 
       $rootScope.$emit("update cart");
     };
+  }]
+});
+"use strict";
+
+shopApp.component("bannerComponent", {
+  templateUrl: "templates/banner/view.html",
+  controller: [function () {
+    var $ctrl = this;
+    $ctrl.path = 'images/banners/banner-';
   }]
 });
 "use strict";
@@ -411,14 +427,5 @@ shopApp.component('headerComponent', {
       localStorage.setItem('cart shop', JSON.stringify($rootScope.cart));
       $ctrl.goods = $rootScope.cart;
     });
-  }]
-});
-"use strict";
-
-shopApp.component("bannerComponent", {
-  templateUrl: "templates/banner/view.html",
-  controller: [function () {
-    var $ctrl = this;
-    $ctrl.path = 'images/banners/banner-';
   }]
 });
