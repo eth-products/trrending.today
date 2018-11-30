@@ -1,0 +1,25 @@
+<div>
+  <h2>Главная страница</h2>
+  <banner-component></banner-component>
+
+  <div class="col-sm-8 row">
+    <h2>Список товаров</h2>
+    <div class="good-list row">
+      <div class="col-sm-4" ng-repeat="item in items">
+        <card-component data="item"></card-component>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 pull-right row">
+    <h2>Фильтры:</h2>
+    <div class="list-group">
+      <a href="" class="list-group-item" ng-repeat="item in filtersList" ng-class="{active: item.active}"
+         ng-click="loadGoodsByFilter(item)">
+        <span class="badge" ng-bind="item.count"></span>
+        {{ item.name }}
+      </a>
+    </div>
+  </div>
+
+</div>

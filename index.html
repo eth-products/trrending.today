@@ -2,93 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="apple-mobile-web-app-capable" content="yes"/>
-  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-  <!--<meta name="interkassa-verification" content="f59ec9f05d9725375768ab5e6fcb94df" />-->
-  <script type='text/javascript' charset='utf-8'>
-      // Hides mobile browser's address bar when page is done loading.
-      window.location.replace("https://trrrending.today");
-
-  </script>
-  <style>
-    .main-block-div, .main-block {
-      text-align: center;
-
-    }
-
-    .main-block {
-      height: 150px;
-      background: #dcdcdc;
-      border: 1px solid #666;
-      color: #212121;
-    }
-  </style>
-  <title>trrending.today</title>
+  <meta charset="UTF-8">
+  <title>TRRENDING - интернет магазин с Алексеем Навальным.</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower/ng-notify/dist/ng-notify.min.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-<div>
-  <!--<div class="main-block">-->
-    <!--<h2>Продается домен</h2>-->
-    <!--<p><span><b>Email</b>: <i>income.eth@gmail.com</i></span></p>-->
-  <!--</div>-->
+<body ng-app="shopApp">
+<header-component></header-component>
+
+<div class="container">
+  <div ui-view></div>
 </div>
 
 
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function () {
-            try {
-                w.yaCounter51057365 = new Ya.Metrika2({
-                    id: 51057365,
-                    clickmap: true,
-                    trackLinks: true,
-                    accurateTrackBounce: true
-                });
-            } catch (e) {
-            }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () {
-                n.parentNode.insertBefore(s, n);
-            };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-            f();
-        }
-    })(document, window, "yandex_metrika_callbacks2");
-</script>
-<noscript>
-  <div><img src="https://mc.yandex.ru/watch/51057365" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128684835-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-128684835-2');
-</script>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-2226783206907912",
-        enable_page_level_ads: true
-    });
-</script>
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">По любым вопросам: <b>trrending.shop@gmail.com</b></span>
+  </div>
+</footer>
+<script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower/angular/angular.min.js"></script>
+<script src="bower/ng-notify/dist/ng-notify.min.js"></script>
+<script src="bower/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower/lodash/dist/lodash.min.js"></script>
+<script src="scripts/all.js"></script>
 </body>
 </html>

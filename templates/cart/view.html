@@ -1,0 +1,39 @@
+<div>
+  <h2>Корзина</h2>
+  <div class="col-sm-8 row">
+    <h3>Товаров в корзине: <span class="label label-success" ng-bind="list.length"></span></h3>
+    <div class="car" style="height: 50px;">
+      <h2 ng-if="!list.length" class="text-muted">Добавьте товары в корзину</h2>
+      <div class="row">
+        <div class="col-sm-4" ng-repeat="item in list">
+          <card-component data="item"></card-component>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-4 pull-right row">
+    <h3>Итого: <span ng-bind="((list | sum:'price') | number:2) + ' ₽'"></span></h3>
+    <div>
+      <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml" target="_blank">
+        <input type="hidden" name="receiver" value="410018149418005">
+        <input type="hidden" name="formcomment" value="trrending.today - кружки, толстовки, футболки">
+        <input type="hidden" name="short-dest" value="trrending.today - кружки, толстовки, футболки">
+        <input type="hidden" name="label" value="12">
+        <input type="hidden" name="quickpay-form" value="donate">
+        <input type="hidden" name="targets" value="Trrending-shop">
+        <input type="hidden" name="sum" value="{{(list | sum:'price')}}" data-type="number">
+        <input type="hidden" name="comment" value="trrending.today - кружки, толстовки, футболки">
+        <input type="hidden" name="need-fio" value="true">
+        <input type="hidden" name="need-email" value="true">
+        <input type="hidden" name="need-phone" value="true">
+        <input type="hidden" name="need-address" value="true">
+        <label style="display: none;">
+          <input type="radio" name="paymentType" value="AC" checked>Банковской картой
+        </label>
+        <button type="submit" class="btn btn-success">Оформить заказ</button></form>
+    </div>
+  </div>
+
+</div>

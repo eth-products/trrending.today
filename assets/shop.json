@@ -1,0 +1,284 @@
+{
+  "goods": [
+    {
+      "type": "cup",
+      "typeId": "0",
+      "name": "Белая кружка с надписью, 'Навальный'",
+      "src": "images/cards/1.png",
+      "price": "799",
+      "id": "0"
+    },
+    {
+      "type": "cover passport",
+      "typeId": "1",
+      "price": "1299",
+      "name": "Фирменная обложка на паспорт",
+      "src": "images/cards/3.png",
+      "id": "1"
+    },
+    {
+      "type": "cover phone",
+      "typeId": "2",
+      "price": "1299",
+      "name": "Чехол для мобильного с текстом в красном круге 'Навальный'",
+      "src": "images/cards/25.png",
+      "id": "2"
+    },
+    {
+      "type": "t-shirt",
+      "typeId": "3",
+      "price": "1399",
+      "name": "Футболка с надписью, 'Навальный 2018'",
+      "src": "images/cards/10.png",
+      "id": "3"
+    },
+    {
+      "type": "t-shirt",
+      "typeId": "3",
+      "price": "1399",
+      "name": "Футболка с надписью в круге, 'Навальный'",
+      "src": "images/cards/7.png",
+      "id": "4"
+    },
+    {
+      "type": "t-shirt",
+      "typeId": "3",
+      "price": "1399",
+      "name": "Футболка с изображением, 'Навального'",
+      "src": "images/cards/9.png",
+      "id": "5"
+    },
+    {
+      "type": "t-shirt",
+      "typeId": "3",
+      "price": "1399",
+      "name": "Синяя Футболка с надписью в круге, 'Навальный'",
+      "src": "images/cards/11.png",
+      "id": "6"
+    },
+    {
+      "type": "t-shirt",
+      "typeId": "3",
+      "price": "1399",
+      "name": "Синяя Футболка с надписью, 'Навальный 2018'",
+      "src": "images/cards/12.png",
+      "id": "7"
+    },
+    {
+      "type": "t-shirt",
+      "typeId": "3",
+      "price": "1399",
+      "name": "Белая Футболка с изображением, 'Навального'",
+      "src": "images/cards/13.png",
+      "id": "8"
+    },
+    {
+      "type": "t-shirt",
+      "typeId": "3",
+      "price": "1399",
+      "name": "Белая Футболка с текстом на всю высоту майки",
+      "src": "images/cards/14.png",
+      "id": "9"
+    },
+    {
+      "type": "jacket",
+      "typeId": "4",
+      "price": "2990",
+      "name": "Фирменная черная толстовка с капюшоном, с текстом 'навальный 2018'",
+      "src": "images/cards/15.png",
+      "id": "10"
+    },
+    {
+      "type": "blouse",
+      "typeId": "5",
+      "price": "2799",
+      "name": "Свитшот фирменный, с красным кругом 'Навальный'",
+      "src": "images/cards/20.png",
+      "id": "11"
+    },
+    {
+      "type": "blouse",
+      "typeId": "5",
+      "price": "2799",
+      "name": "Свитшот фирменный, с текстом 'Навальный'",
+      "src": "images/cards/21.png",
+      "id": "12"
+    },
+    {
+      "type": "jacket",
+      "typeId": "4",
+      "price": "2990",
+      "name": "Фирменная черная толстовка с капюшоном, с текстом в красном круге 'навальный'",
+      "src": "images/cards/22.png",
+      "id": "13"
+    },
+    {
+      "type": "cover phone",
+      "typeId": "2",
+      "price": "1299",
+      "name": "Чехол для мобильного с текстом 'Навальный 2018'",
+      "src": "images/cards/23.png",
+      "id": "14"
+    },
+    {
+      "type": "cover phone",
+      "typeId": "2",
+      "price": "1299",
+      "name": "Чехол для мобильного с изображением 'Навальный 2018'",
+      "src": "images/cards/24.png",
+      "id": "15"
+    },
+    {
+      "type": "cup",
+      "typeId": "0",
+      "price": "799",
+      "name": "Керамическая кружка с изображением Навального",
+      "src": "images/cards/26.png",
+      "id": "16"
+    },
+    {
+      "type": "cup",
+      "typeId": "0",
+      "price": "799",
+      "name": "Керамическая кружка с текстом и красным кругом",
+      "src": "images/cards/27.png",
+      "id": "17"
+    },
+    {
+      "type": "cup",
+      "typeId": "0",
+      "price": "799",
+      "name": "Керамическая кружка с текстом 'Навальный 2018'",
+      "src": "images/cards/27-1.png",
+      "id": "18"
+    },
+    {
+      "type": "jacket",
+      "typeId": "4",
+      "price": "2990",
+      "name": "Фирменная белая толстовка с изображением Навального",
+      "src": "images/cards/28.png",
+      "id": "19"
+    },
+    {
+      "type": "jacket",
+      "typeId": "4",
+      "price": "2990",
+      "name": "Фирменная белая толстовка с текстом Навальный 2018",
+      "src": "images/cards/29.png",
+      "id": "20"
+    },
+    {
+      "type": "lighter",
+      "typeId": "6",
+      "price": "1700",
+      "name": "Зажигалка, с текстом в красном круге",
+      "src": "images/cards/30.png",
+      "id": "21"
+    },
+    {
+      "type": "lighter",
+      "typeId": "6",
+      "price": "1700",
+      "name": "Зажигалка, с изображением Навального",
+      "src": "images/cards/31.png",
+      "id": "22"
+    },
+    {
+      "type": "lighter",
+      "typeId": "6",
+      "price": "1700",
+      "name": "Зажигалка, с текстом Навальный 2018",
+      "src": "images/cards/32.png",
+      "id": "23"
+    },
+    {
+      "type": "cap",
+      "typeId": "7",
+      "price": "990",
+      "name": "Кепка с текстом Навальный в круге",
+      "src": "images/cards/33.png",
+      "id": "24"
+    },
+    {
+      "type": "cap",
+      "typeId": "7",
+      "price": "990",
+      "name": "Кепка с текстом 'Навальный 2018'",
+      "src": "images/cards/34.png",
+      "id": "25"
+    },
+    {
+      "type": "cap",
+      "typeId": "7",
+      "price": "990",
+      "name": "Кепка с изображением 'Навальный 2018'",
+      "src": "images/cards/35.png",
+      "id": "26"
+    },
+    {
+      "type": "cover passport",
+      "typeId": "1",
+      "price": "1299",
+      "name": "Фирменная обложка на паспорт с текстом Навальный",
+      "src": "images/cards/37.png",
+      "id": "27"
+    },
+    {
+      "type": "cover passport",
+      "typeId": "1",
+      "price": "1299",
+      "name": "Фирменная обложка на паспорт с текстом Навальный",
+      "src": "images/cards/36.png",
+      "id": "28"
+    },
+    {
+      "type": "cover passport",
+      "typeId": "1",
+      "price": "1299",
+      "name": "Фирменная обложка на паспорт с изображением Навального",
+      "src": "images/cards/38.png",
+      "id": "29"
+    },
+    {
+      "type": "cover number car",
+      "typeId": "8",
+      "price": "1300",
+      "name": "Обложка на номер машины с Навальным",
+      "src": "images/cards/39.png",
+      "id": "30"
+    },
+    {
+      "type": "clock",
+      "typeId": "9",
+      "price": "2099",
+      "name": "Часы настенные с изображением Навального",
+      "src": "images/cards/40.png",
+      "id": "31"
+    },
+    {
+      "type": "clock",
+      "typeId": "9",
+      "price": "2099",
+      "name": "Часы настенные с текстом 'Навальный'",
+      "src": "images/cards/41.png",
+      "id": "32"
+    },
+    {
+      "type": "umbrella",
+      "typeId": "10",
+      "price": "1450",
+      "name": "Зонт с текстом Навальный",
+      "src": "images/cards/42.png",
+      "id": "33"
+    },
+    {
+      "type": "umbrella",
+      "typeId": "10",
+      "price": "1450",
+      "name": "Зонт с текстом Навальный",
+      "src": "images/cards/43.png",
+      "id": "34"
+    }
+  ]
+}

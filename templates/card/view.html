@@ -1,0 +1,52 @@
+<div class="good-list-item">
+  <div class="good-list-item-head">
+    <img src="{{$ctrl.data.src}}" alt="">
+  </div>
+
+  <div class="good-price text-center">
+    <div class="good-price-cover"></div>
+  </div>
+
+  <div class="good-list-item-info">
+    <div>
+      Стоимость: <b ng-bind="$ctrl.data.price | number"></b> ₽
+    </div>
+    <div style="padding: 5px 0;">
+      <div>
+        <div ng-if="$ctrl.data.typeId == '2' || $ctrl.data.typeId == '3' || $ctrl.data.typeId == '4' || $ctrl.data.typeId == '5'">
+          <b class="va-middle" ng-bind="$ctrl.data.typeId == '2' ? 'Модель:' : 'Размер'"></b>
+
+          <div class="btn-group btn-group-xs pull-right" role="group" ng-if="!$ctrl.data.size">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+              {{ $ctrl.currentSize }}
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li ng-repeat="size in $ctrl.sizes">
+                <a href="" ng-click="$ctrl.currentSize = size" ng-bind="size"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="inline-block" ng-if="$ctrl.data.size" ng-bind="$ctrl.data.size">
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="btn  btn-block to-cart" ng-click="$ctrl.addItemToCart()"
+                ng-class="{'btn-success' : !$ctrl.data.added, 'btn-warning' : $ctrl.data.added }">
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+
+          {{ $ctrl.data.added ? 'Убрать с корзины' : 'В корзину' }}
+
+        </button>
+      </div>
+
+      <div class="clearfix">
+
+      </div>
+    </div>
+  </div>
+</div>
