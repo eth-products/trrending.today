@@ -11,8 +11,6 @@
       </div>
     </div>
   </div>
-
-
   <div class="col-sm-4 pull-right row">
     <h3>Итого: <span ng-bind="((list | sum:'price') | number:2) + ' ₽'"></span></h3>
     <div>
@@ -20,7 +18,7 @@
         <input type="hidden" name="receiver" value="410018149418005">
         <input type="hidden" name="formcomment" value="trrending.today - кружки, толстовки, футболки">
         <input type="hidden" name="short-dest" value="trrending.today - кружки, толстовки, футболки">
-        <input type="hidden" name="label" value="12">
+        <input type="hidden" name="label" value="{{listString}}">
         <input type="hidden" name="quickpay-form" value="donate">
         <input type="hidden" name="targets" value="Trrending-shop">
         <input type="hidden" name="sum" value="{{(list | sum:'price')}}" data-type="number">
